@@ -1,17 +1,25 @@
 {
-  "name": "tasklist-tp-final",
+  "name": "final-paradigmas-julio-2026",
   "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "ts-node src/main.ts"
+    "build": "tsc",
+    "start": "ts-node main.ts",
+    "check": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "@types/prompt-sync": "^4.2.3",
+    "ts-node": "10.9.2",
+    "typescript": "5.9.3"
   },
   "dependencies": {
     "logicjs": "^1.0.0",
     "prompt-sync": "^4.2.0"
-  },
-  "devDependencies": {
-    "@types/node": "^22.0.0",
-    "@types/prompt-sync": "^4.2.3",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.6.0"
   }
 }

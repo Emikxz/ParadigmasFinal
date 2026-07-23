@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Ejecutar TaskList en ventana nueva",
+
+            "runtimeExecutable": "node",
+
+            "runtimeArgs": [
+                "-r",
+                "ts-node/register"
+            ],
+
+            "program": "${workspaceFolder}/main.ts",
+
+            "cwd": "${workspaceFolder}",
+
+            "console": "externalTerminal",
+
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        }
+    ]
+}
