@@ -15,7 +15,8 @@ import { prompt } from "./prompt"
 import { resolve } from "node:path"
 
 // Ruta del archivo utilizado para persistir las tareas.
-const TASKS_FILE_PATH = resolve(process.cwd(), "data", "tasks.json")
+
+const TASKS_FILE_PATH = resolve(__dirname, "data","tasks.json")
 
 // Única instancia principal del administrador de tareas.
 const taskManager = new TaskManager()
@@ -374,3 +375,4 @@ runApp().catch(error => {
         console.log("\n⚠️🚨 Ocurrió un error al iniciar el programa 🚨⚠️")
     }
 })
+
