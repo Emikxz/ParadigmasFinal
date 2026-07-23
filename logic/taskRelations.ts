@@ -4,11 +4,11 @@
 
 const { lvar, run, and, or, eq } = require("logicjs")
 
-// lvar → crea variables lógicas
-// run  → ejecuta una consulta
-// and  → exige que varias condiciones se cumplan
-// or   → permite que se cumpla cualquiera de varios hechos
-// eq   → establece una igualdad lógica
+// lvar → Crea variables lógicas (incógnitas que pueden unificarse con valores)
+// run  → Ejecuta consultas lógicas y devuelve los resultados
+// and  → Operador lógico AND (todas las condiciones deben ser verdaderas)
+// or   → Operador lógico OR (al menos una condición debe ser verdadera)
+// eq   → Establece igualdad entre dos términos (eq(x, "juan") significa "x es igual a juan")
 
 import { Task } from "../models/Task"
 
@@ -24,7 +24,7 @@ const normalizeWords = (title: string): string[] => {
 
 
 /**
- * Hecho lógico:
+ * Hecho lógico: con este hecho lo que hago es definir el universo en cierto sentido.
  * taskWord(taskId, word) se cumple si una tarea activa contiene esa palabra en su título
  * @param tasks Colección de tareas disponible
  * @param taskId ID de tarea

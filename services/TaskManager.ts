@@ -39,7 +39,7 @@ export class TaskManager {
     // Repositorio que uso para cargar y guardar las tareas
     // Es privado porque solo TaskManager debe acceder a él
     // readonly significa que despues de asignar el repositorio en el constructor, no se puede reemplazar por otro.
-    private readonly repository: TaskRepository 
+    private readonly repository: TaskRepository  // TaskRepository lo creo para que se ocupe del archivo separando su responsabilidad.
 
     constructor(repository: TaskRepository = new TaskRepository()) { // Si no le pasamos un repositorio crea uno automáticamente
         this.repository = repository
